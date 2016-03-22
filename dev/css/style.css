@@ -81,13 +81,11 @@ input{
 #panel{
     position: relative;
     background-color: #fff;
-    min-width: 800px;
-    max-width: 900px;
     margin: 0 auto;
     padding: 10px 15px 30px;
     box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.3);
     border-radius: 1px 1px 0 0;
-    width: 380px;
+    width: 230px;
     min-width: inherit;
     max-width: inherit;
 }
@@ -104,7 +102,6 @@ input{
     text-transform: uppercase;
 }
 
-#panel input[type="color"],
 #panel select{
     width: 100%;
     border: none;
@@ -115,19 +112,8 @@ input{
     cursor: pointer;
 }
 
-#panel input[type="color"] {
-    padding: 0px 0px 2px;
-    margin-top: 10px;
-}
-
 #panel select {
     margin-top: 10px;
-}
-
-
-#panel input[type="color"]:hover{
-    -moz-appearance: number-input;
-    border-color: #333;
 }
 
 #panel .footer{

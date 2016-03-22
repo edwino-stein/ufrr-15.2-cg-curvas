@@ -3,7 +3,8 @@ var App = new Application({
         'Util',
         'View.Svg',
         'View.Canvas',
-        'Controller.Algorithms'
+        'Controller.Algorithms',
+        'Controller.Main'
     ],
     modulesPath: 'js/app/'
 });
