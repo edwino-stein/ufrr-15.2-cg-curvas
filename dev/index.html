@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Trabalho de Computação Gráfica - Curvas de Bézier</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/snap.svg-min.js"></script>
+        <script type="text/javascript" src="js/Application.js"></script>
+        <script type="text/javascript" src="js/app/App.js"></script>
+    </head>
+    <body>
+        <div id="screen">
+            <div id="viewbox">
+                <canvas id="canvas" width="800" height="600"></canvas>
+                <svg id="svg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 800 600"></svg>
+                <div id="time">
+                    <span class="raster">0</span>ms
+                </div>
+            </div>
+        </div>
+        <div id="panel" class="container-fluid" >
+
+            <div class="col-xs-6">
+                <h4 style="padding: 0px">Algoritmo</h4>
+                <label>de curva de Bézier</label>
+                <select id="algorithm">
+                    <option value="parametric" selected >Equação Paramétrica</option>
+                    <option value="casteljau" >Casteljau</option>
+                </select>
+            </div>
+
+            <div class="col-xs-6">
+                <h4 style="padding: 0px">Cor</h4>
+                <label>da Linha</label>
+                <input id="color" type="color" value="#000000" />
+            </div>
+
+            <div class="col-xs-12 footer">
+                Desenvolvido por Edwino Stein
+            </div>
+        </div>
+    </body>
+</html>
