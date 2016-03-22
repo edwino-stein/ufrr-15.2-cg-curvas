@@ -1,8 +1,12 @@
 App.define('Util', {
 
     Point: function Point(x, y){
-        this.x = x;
-        this.y = y;
+
+        x = parseFloat(x);
+        y = parseFloat(y);
+
+        this.x = isNaN(x) ? 0 : x;
+        this.y = isNaN(y) ? 0 : y;
     },
 
     Color: function Color(red, green, blue){
