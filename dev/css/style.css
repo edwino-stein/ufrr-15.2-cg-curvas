@@ -78,6 +78,14 @@ input{
     cursor: grabbing;
 }
 
+#info{
+    font-size: 12px;
+    position: absolute;
+    left: 4px;
+    bottom: -23px;
+    color: #777;
+}
+
 #panel{
     position: relative;
     background-color: #fff;
